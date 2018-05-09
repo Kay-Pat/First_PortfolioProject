@@ -1,0 +1,162 @@
+html, body, div, h1, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #4c5054;
+  font-family: Arial, san-serif;
+  width: 100%;
+}
+/*Header section */
+header {
+  border-bottom: #d20e0e solid 4px;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  width:100%;
+}
+
+/*Logo container which holds logo img*/
+#logoContainer {
+  width:100%;
+}
+.logoimg {
+  display:block;
+  margin:0;
+  float:left;
+  padding-left:0;
+}
+
+/*right side name and subtitle*/
+#nameContainer {
+  text-align: right;
+  width: 100%;
+}
+
+/*Komal Pattni*/
+.name {
+	font-family: san-serif;
+	padding-top:10px;
+	font-size: 40px;
+	padding-right:0.20em;
+	text-transform: uppercase;
+	color:#383b3e;
+	font-weight: normal;
+}
+
+/*Front End Web Dev*/
+.subtitle {
+  font-size:20px;
+  padding-top: 10px;
+  padding-right:0.25em;
+  font-family: san-serif;
+  text-transform: uppercase;
+}
+
+/* Main Image*/
+
+#mainImage {
+  width:100%;
+}
+
+.imageContainer {
+  margin-bottom: 18px;
+}
+.colorImage {
+  width:100%;
+}
+
+/* Featured Work Title*/
+h2 {
+  color:#5e5e5f;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/*div of to have text of featured work in center */
+.featured {
+  text-align: center;
+  width:100%;
+}
+
+.featured img {
+  width:100%;
+}
+.featuredWorkTitle {
+  /*font-size:20px;*/
+  color:#c35487;
+  text-transform: uppercase;
+ 
+}
+.featuredURL {
+  font-size:12px;
+}
+
+/*Media Queries*/
+@media screen and (max-width:749px) {
+  h1 {
+    font-size: 2em;
+  }
+  h1, .subtitle {
+    text-align: left;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  span { display: block;}
+  #logoContainer {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .logoimg {
+    margin: auto 5%;
+  }
+  #nameContainer {
+    width: 100%;
+  }
+  #featuredWork {
+    width: 100%;
+  }
+  .featured {
+    width:100%;
+  }
+
+  .featuredText{
+    margin: 5px 0 30px 0;
+  }
+  .featuredWorkTitle {
+    font-size:1.25em;
+  }
+  .featuredURL {
+    font-size:1em;
+  }
+} 
+/* 1st breakpoint */
+@media screen and (min-width:750px) {
+#featuredWork {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.featured {
+    width:20%;
+  }
+.featuredWorkTitle {
+    font-size:1.5em;
+  }
+}
+/* 2nd breakpoint */
+@media screen and (min-width:960px) {
+   header, section {
+    width: 100%;
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
